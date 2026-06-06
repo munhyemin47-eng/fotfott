@@ -1,5 +1,22 @@
 import streamlit as st
 import plotly.graph_objects as go
+import cv2
+# ... 기존 임포트들 ...
+
+st.title("발 분석 프로젝트") # 화면에 제목이 뜨는지 확인
+
+# 모델 불러오기 (경로가 정확한지 확인!)
+try:
+    # 예시: 여기서 에러가 나면 아래 메시지가 출력됨
+    st.write("모델을 불러오는 중...")
+    # model = YOLO('models/foot_best.pt') 
+    st.write("모델 로드 성공!")
+except Exception as e:
+    st.error(f"모델 로드 실패: {e}")
+
+# ... 나머지 코드 ...
+import streamlit as st
+import plotly.graph_objects as go
 import numpy as np
 import os, tempfile
 from processor import analyze_video
