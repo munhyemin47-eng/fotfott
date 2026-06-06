@@ -1,5 +1,7 @@
 streamlit
-opencv-python-headless
 ultralytics
-plotly
+opencv-python-headless
 numpy
+gdown
+plotly
+trimesh
